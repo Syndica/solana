@@ -470,5 +470,5 @@ rev = "7cf47705faacf7bf0e43e4131a5377b3291fce21"
 rustflags = ["-C", "target-cpu=native"]
 
 [profile.release]
-lto = false
+lto = fat
 codegen-units = 1
