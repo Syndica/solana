@@ -561,3 +561,10 @@ rev = "b500cdc2a920cd5bff9e2dd974d7b97349d61464"
 [patch.crates-io.tokio]
 git = "https://github.com/solana-labs/solana-tokio.git"
 rev = "7cf47705faacf7bf0e43e4131a5377b3291fce21"
+
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
